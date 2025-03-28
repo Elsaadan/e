@@ -10,14 +10,13 @@ body{
 .B{
     width:95%;
     height: 95%;
-    background: #fb3901;
+    /* background-image:linear-gradient(to top left, #fb3901 20%,#ee601e); */
+    background-image:linear-gradient(to top left, #fb3f01 20%,#ff5405);
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
     
-    
-    
-    
+
 }
 
 
@@ -30,16 +29,14 @@ nav{
     padding-bottom: 0;
     align-items: center;
     box-shadow: 2px 0 20px 0 #f53f02;
-
     
-    
-    
-
     
 }
 
 ul{
-    margin-right: 90px;
+    margin-right: 140px;
+    position: relative;
+    top: 20px;
 }
 
 
@@ -51,12 +48,13 @@ div ul li {
     list-style: none;
     text-align: center;
     text-decoration: none;
-    border: 2px #fb3901 solid;
+    border: 2px #ffffff solid;
     border-radius: 10px;
     width: 160px;
     margin-bottom: 10px; 
-    background: #7d04fffd;
+    background: transparent;
     font-size: 23px;
+    height: 33px;
     
        
 }
@@ -64,7 +62,7 @@ div ul li {
 div img{
         width: 80px;
         margin: 0;
-       
+        
     
 }
 
@@ -74,7 +72,9 @@ div img{
     text-align: center;
     font-size: 29px;
     color:#f2f2f2;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    
+
    
 }
 
@@ -83,15 +83,16 @@ div ul li a{
     list-style: none;
     text-decoration: none;
     color: rgb(255, 255, 255);
+    letter-spacing: 2px;
     
-
+    
 
 
 }
 .had{
     width: 95%;
     height: 580px;
-    background: orangered;
+    background-image:linear-gradient(to top left, #fb3301 20%,#ff5405);
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
@@ -109,7 +110,9 @@ div ul li a{
     color: white;
     letter-spacing: 2px;
     margin-right: 45px;
-    padding-top: 80px;
+    padding-top: 60px;
+    font-weight: bold;
+
     
     
 
@@ -118,7 +121,139 @@ div ul li a{
 #pp{
     color: #f8f8f8;
     text-align: right;
-    font-size: 25px;
-    margin: 0 90px;
+    font-size: 23px;
+    margin: 0 48px;
+    font-weight: bold;
     
+}
+
+.had .imgss img{
+    width: 22%;
+    margin-top: 38px;
+    /* margin-left: 20px; */
+    margin-left: 20px;
+    /* padding-right: 32px;  */
+    border-radius: 30px;
+    border: outset 2px #ffffff;
+    transition: 1s ease-out;
+    
+    
+    
+
+}
+
+.A .had .imgss{
+
+     width: 100%;
+    padding-right:37px ;
+    
+    
+
+}
+
+div ul li a:hover{
+    color: rgb(253, 253, 253);
+    letter-spacing: 2px;
+    
+    
+}
+
+div ul li:hover{
+    border: rebeccapurple 2px solid;
+    background: rebeccapurple;
+    
+    
+
+}
+
+.A .had .imgss .zoom:hover{
+
+    transform: scale(0.9);
+    cursor:pointer;
+    box-shadow: 0 0 20px 0 rgb(234, 188, 4);
+}
+
+.A .had .imgss .zoom{
+    animation-name: zom ;
+    animation-delay: 4s;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
+
+.imgss #zom1{
+
+    animation-name: zom ;
+    animation-delay: 4s;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zom{
+
+    10%{background-image: url(WhatsApp_Image_2025-01-18_at_6.00.jpg);}
+    30%{background-image: url(WhatsApp_Image_2025-01-18_at_6.00.jpg);}
+    
+
+}
+#logoo:hover{
+
+    transform: scale(1.3);
+    cursor:pointer;
+    animation-play-state: paused;
+}
+
+#logoo{
+    transform: scale(1.2);
+    animation-name: lo;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes lo {
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+#work {
+    
+    background: rebeccapurple;
+    display: inline-block;
+    position: relative;
+    bottom: 55px;
+    left: 75px;
+    width: 160px;
+    height: 34px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 0 7px 0 rebeccapurple;
+    
+    
+    
+}
+
+#work:hover{
+
+    background:#ffbf00 ;
+}
+
+#work span{
+    font-size: 22px;
+}
+
+#work a{
+    
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
